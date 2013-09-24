@@ -1,4 +1,9 @@
 AdrenalineslacklinesCom::Application.routes.draw do
+  get "content_pages/home"
+  get "content_pages/athletes"
+  get "content_pages/about"
+  get "content_pages/about_sport"
+  get "content_pages/disclaimer"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-AdrenalineslacklinesCom::Application.config.secret_key_base = '0033b2d384582645997bf18a2e12b5d5f6c8cc35c35778890631b57cda5395c1615ed882920589c9f183dd777dd316e89908a169eaed613d07cff67cc261fa59'
+
+
+require "securerandom"
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    File.read(token_file).chomp
+  else
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+AdrenalineslacklinesCom::Application.config.secret_key_base = secure_token
