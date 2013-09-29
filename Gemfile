@@ -9,10 +9,17 @@ gem 'pg', '0.15.1'
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
-
+gem 'sass-rails', '~> 4.0.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+
+# Need Compass for foundation
+gem 'compass-rails'
+gem 'zurb-foundation', '~> 4.0.0'
+
 
 group :doc do
   gem 'sdoc', require: false
@@ -33,9 +40,3 @@ group :test do
   gem 'capybara', '2.1.0'
 end
 
-group :assets do
-  gem 'sass-rails', '~> 4.0.0'
-  gem 'uglifier', '>= 1.3.0'
-  gem 'coffee-rails', '~> 4.0.0'
-  gem 'zurb-foundation', '~> 4.0.0'
-end
