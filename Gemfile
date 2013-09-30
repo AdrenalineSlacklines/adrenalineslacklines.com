@@ -21,6 +21,9 @@ gem 'compass-rails'
 gem 'zurb-foundation', '~> 4.0.0'
 
 
+# Adding Apropos to serve responsive images
+gem 'apropos'
+
 group :doc do
   gem 'sdoc', require: false
 end

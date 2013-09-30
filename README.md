@@ -27,3 +27,6 @@ Image Hosting is done on [Amazon S3](http://aws.amazon.com/s3/).
 
 Search is implemented with [Swiftype](https://swiftype.com/).
 
+#### Responsive Images
+
+Responsive images are served using the [Apropos](https://github.com/square/apropos) library to reduce load speeds and only use the images necessary.

@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ *= require foundation
+ *= require foundation_and_overrides
+ */
+
+
+$apropos-breakpoints: (medium, 768px), (large, 1024px);
+
+// @import "apropos";
+
+
+/******************* VARIABLES *******************/
+/*-----------------------------------------------*/
+$prefixes: "-webkit-", "-moz-", "-o-", "-ms-";
+
+
+// COLORS
+
+$adrenaline-red: #d2232a;
+$adrenaline-blue: #0087d5;
+
+$dark-grey: #212121;
+$medium-grey: #2f2f2f;
+$light-grey: #4f4f4f;
+
+
+/********************* MIXINS ********************/
+/*-----------------------------------------------*/
+
+
+
+// FONTS
+@mixin open-sans-light {
+  font-family: "open-sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin open-sans-regular {
+  font-family: "open-sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin open-sans-bold {
+  font-family: "open-sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/******************** HTML TAGS ******************/
+/*-----------------------------------------------*/
+
+body {
+  border-top: 10px solid $adrenaline-red;
+}
+
+/******************** HEADER *********************/
+/*-----------------------------------------------*/
+
+.logo {
+  background-image: url("test");
+  // +apropos-bg-variants('logo.png', $generate-height: true);
+}
+

@@ -25,6 +25,8 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
+    apropos (0.1.0)
+      compass
     arel (4.0.0)
     atomic (1.1.14)
     bcrypt-ruby (3.0.1)
@@ -158,6 +160,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  apropos
   bcrypt-ruby (~> 3.0.0)
   capybara (= 2.1.0)
   coffee-rails (~> 4.0.0)
