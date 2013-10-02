@@ -22,7 +22,8 @@ gem 'zurb-foundation', '~> 4.0.0'
 
 
 # Adding Apropos to serve responsive images
-gem 'apropos'
+gem "compass", "~> 0.12.2"
+gem "apropos", "~> 0.1.0"
 
 group :doc do
   gem 'sdoc', require: false

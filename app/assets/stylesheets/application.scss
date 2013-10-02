@@ -16,8 +16,7 @@
 
 
 $apropos-breakpoints: (medium, 768px), (large, 1024px);
-
-// @import "apropos";
+// @import 'apropos';
 
 
 /******************* VARIABLES *******************/
@@ -63,7 +62,7 @@ $light-grey: #4f4f4f;
 /*-----------------------------------------------*/
 
 body {
-  border-top: 10px solid $adrenaline-red;
+  border-top: 5px solid $adrenaline-red;
 }
 
 /******************** HEADER *********************/
