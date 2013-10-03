@@ -27,16 +27,29 @@
     <nav class="top-bar">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#">Adrenaline Slacklines</a></h1>
+          <a href="#" class="logo"><h1>Adrenaline Slacklines</h1></a>
         </li>
       </ul>
       <section class="top-bar-section">
-        <ul class="right">
+        <ul class="left">
           <li> <%= link_to "Athletes", athletes_path %> </li>
           <li> <%= link_to "About", about_path %> </li>
           <li> <%= link_to "About the Sport", about_sport_path %> </li>
+          <li class="has-dropdown"><a href="#">Products</a>
+            <ul class="dropdown">
+              <li><a href="#">Beginner Kit</a></li>
+              <li><a href="#">Intermediate Kit</a></li>
+              <li><a href="#">Advanced Kit</a></li>
+              <li><a href="#">Carabiner</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="right">
+          <li><a href="#">My Cart</a></li>
         </ul>
       </section>
+
     </nav>
 
     <%= yield %>
