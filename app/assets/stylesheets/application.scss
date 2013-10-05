@@ -66,10 +66,11 @@ body {
   background: $black;
 }
 
-/******************** HERO *********************/
+/******************** HERO **********************/
 /*-----------------------------------------------*/
 .hero-container {
-  background: url($cdn + "hero.large.jpg");
+  background: url($cdn + "hero.large.jpg") no-repeat;
+  background-position: center 0;
   height: 500px;
 }
 
