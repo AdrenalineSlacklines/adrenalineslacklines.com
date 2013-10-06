@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe "ContentPages" do
+  subject { page }
+
   let(:base_title) { "Adrenaline Slacklines" }
 
   describe "Home page" do

@@ -17,7 +17,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # Need Compass for foundation
-gem 'compass-rails'
+# gem 'compass-rails'
 gem 'zurb-foundation', '~> 4.0.0'
 
 
@@ -35,11 +35,11 @@ end
 
 
 group :development, :test do
-  gem 'sqlite3', '1.3.7'
   gem 'rspec-rails', '2.13.1'
 end
 
 group :test do
+  gem 'sqlite3', '1.3.7'
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
 end
