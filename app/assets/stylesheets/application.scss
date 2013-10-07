@@ -51,6 +51,7 @@
 
 body {
   border-top: 5px solid $adrenaline-red;
+  color: $background-grey;
   @include open-sans-light;
 }
 
@@ -77,8 +78,8 @@ body {
 .hero-container {
   background: url($cdn + "hero.large.jpg") no-repeat;
   background-position: center 0;
-  height: 500px;
-  margin-bottom: 5px;
+  height: 450px;
+  margin-bottom: 3px;
 }
 
 .hero-text {
@@ -91,13 +92,14 @@ body {
     @include open-sans-light;
   }
   p {
-    font-size: 1.875em;
-    line-height: 1em;
+    font-size: 1.5em;
+    // line-height: 1em;
   }
 }
 
+/******************* CAROUSEL ********************/
+/*-----------------------------------------------*/
 .overlay {
-  // height: 100% !important;
   background-color: rgba(0,0,0,0.5);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
   @include transitions(0.1s, background, linear);
@@ -105,6 +107,7 @@ body {
     background-color: rgba(0,0,0,0.15);
   }
   img {
+    // Set to absolute and -1 to stack overlay
     position: absolute;
     z-index: -1;
   }
@@ -116,28 +119,45 @@ body {
   }
 }
 
-
-.banner-img {
-
-  // &:before {
-  //   z-index: 5000;
-  //   display: block;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   background-color: rgba(0,0,0,0.5);
-  //   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
-  //   @include transitions(0.1s, background, linear);
-  // }
+.carousel {
+  border-bottom: 3px solid $adrenaline-red;
 }
+
+
+.grey-row {
+  background: $background-grey;
+  padding: 2em 0;
+}
+
+/****************** SHOP BANNER ******************/
+/*-----------------------------------------------*/
+.price, .buy-now, .product-description {
+  color: $link-grey;
+
+}
+
+.price {
+  @include open-sans-bold;
+}
+
+.buy-now {
+  text-transform: uppercase;
+  font-weight: 400;
+  // font-size: 1em;
+}
+
+.product-description {
+  font-size: 1em;
+  @include open-sans-light;
+}
+
 
 /**************** GRID OVERRIDES *****************/
 /*-----------------------------------------------*/
 .full-width-row {
   // Add important tag to override precedence of .row
   max-width: 100% !important;
+  @include open-sans-light;
 }
 
 .adjacent-column {
