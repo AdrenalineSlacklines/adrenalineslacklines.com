@@ -21,6 +21,20 @@ $(document).foundation();
 
 $(document).ready(function() {
 
+  //------------- Set Up Height of Overlay ----------//
+
+  function overlay(element) {
+    var imgHeight = $(element).height();
+    $(".overlay").css("height", imgHeight);
+    $(element).next().css("padding-top", imgHeight/2);
+  }
+
+  overlay(".banner-img");
+
+  $(window).resize(function() {
+    overlay(".banner-img");
+  });
+
 
 
 
