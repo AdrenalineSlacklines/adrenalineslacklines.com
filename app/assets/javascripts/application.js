@@ -28,14 +28,21 @@ $(document).ready(function() {
     $(".overlay").css("height", imgHeight);
     $(element).next().css("padding-top", imgHeight/2);
   }
+
   overlay(".banner-img");
 
   $(window).resize(function() {
     overlay(".banner-img");
   });
 
+
   //----------- Carousel Continuous Sliding --------//
   // $(".carousel").animate({"left": "-=50px"}, "slow");
 
 
 });
+
+window.onload = {
+
+
+}
