@@ -25,14 +25,17 @@ $(document).ready(function() {
 
   function overlay(element) {
     var imgHeight = $(element).height();
-    $(".overlay").css("height", imgHeight);
+    $(element).parent().css("height", imgHeight);
     $(element).next().css("padding-top", imgHeight/2);
   }
 
+  // Set the initial overlay
   overlay(".banner-img");
+  overlay(".news-img");
 
   $(window).resize(function() {
     overlay(".banner-img");
+    overlay(".news-img");
   });
 
 
