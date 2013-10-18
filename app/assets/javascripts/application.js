@@ -29,13 +29,20 @@ $(document).ready(function() {
     $(element).next().css("padding-top", imgHeight/2);
   }
 
+  function setNewsHeight (newsImg) {
+    var imgHeight = $(".news-img").height();
+    $(".news").css("height", imgHeight)
+  }
+
   // Set the initial overlay
   overlay(".banner-img");
   overlay(".news-img");
+  setNewsHeight(".news-img");
 
   $(window).resize(function() {
     overlay(".banner-img");
     overlay(".news-img");
+    setNewsHeight(".news-img");
   });
 
 
