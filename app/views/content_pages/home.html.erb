@@ -110,26 +110,50 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ipsum, eius, molestias veniam expedita doloribus iure odit excepturi.</p>
     </div>
 
-    <div class="article">
+<!--     <div class="article">
       <h3>9/2013</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ipsum, eius, molestias veniam expedita doloribus iure odit excepturi.</p>
-    </div>
+    </div> -->
 
     <%= link_to "View All", "#", class: "red-button news-button" %>
-
-
   </div>
 
 </div>
 
+<div class="full-width-row row footer-top">
+  <ul>
+    <li>About</li>
+    <li>Shop</li>
+    <li>Connect</li>
+    <li>Help</li>
+  </ul>
+</div>
+
+<div class="full-width-row row footer-main">
+  <ul>
+    <li><%= link_to "About", about_path %></li>
+    <li><%= link_to "Media", "#" %></li>
+    <li><%= link_to "Disclaimer", disclaimer_path %></li>
+    <li><%= link_to "Contact", "#" %></li>
+  </ul>
+
+  <ul>
+    <li><%= link_to "Kits", "#" %></li>
+    <li><%= link_to "Products", "#" %></li>
+  </ul>
+
+  <ul>
+    <li><%= link_to "Facebook", "https://www.facebook.com/adrenalineslacklines" %></li>
+    <li><%= link_to "Twitter", "https://twitter.com/slacklines" %></li>
+    <li><%= link_to "YouTube", "http://www.youtube.com/AdrenalineSlackline" %></li>
+  </ul>
+
+  <ul>
+    <li><%= link_to "Athletes", athletes_path %></li>
+    <li><%= link_to "About the Sport", about_sport_path %></li>
+    <li><%= link_to "Support", "#" %></li>
+    <li><%= link_to "FAQ", "#" %></li>
+  </ul>
+</div>
 
 
-<h1>ContentPages#home</h1>
-<p>Find me in app/views/content_pages/home.html.erb</p>
-
-<ul>
- <li> <%= link_to "Athletes", athletes_path %> </li>
- <li> <%= link_to "About", about_path %> </li>
- <li> <%= link_to "About the Sport", about_sport_path %> </li>
- <li> <%= link_to "Disclaimer", disclaimer_path %> </li>
-</ul>
