@@ -16,10 +16,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
-# Need Compass for foundation
-# gem 'compass-rails'
+# Foundation Framework
 gem 'zurb-foundation', '~> 4.0.0'
-
 
 # Adding Apropos to serve responsive images
 gem "compass", "~> 0.12.2"
