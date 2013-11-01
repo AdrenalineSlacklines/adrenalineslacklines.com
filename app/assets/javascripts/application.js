@@ -51,8 +51,3 @@ $(document).ready(function() {
 
 
 });
-
-window.onload = {
-
-
-}

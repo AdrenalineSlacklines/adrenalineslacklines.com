@@ -178,7 +178,7 @@ DEPENDENCIES
   compass (~> 0.12.2)
   easypost
   jbuilder (~> 1.2)
-  jquery-rails
+  jquery-rails (= 3.0.4)
   pg (= 0.15.1)
   rails (= 4.0.0)
   rails_12factor (= 0.0.2)
