@@ -56,6 +56,42 @@
 
     <%= yield %>
 
+    <div class="full-width-row row footer-top">
+      <ul>
+        <li>About</li>
+        <li>Shop</li>
+        <li>Connect</li>
+        <li>Help</li>
+      </ul>
+    </div>
+
+    <div class="full-width-row row footer-main">
+      <ul>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Media", "#" %></li>
+        <li><%= link_to "Disclaimer", disclaimer_path %></li>
+        <li><%= link_to "Contact", "#" %></li>
+      </ul>
+
+      <ul>
+        <li><%= link_to "Kits", "#" %></li>
+        <li><%= link_to "Products", "#" %></li>
+      </ul>
+
+      <ul>
+        <li><%= link_to "Facebook", "https://www.facebook.com/adrenalineslacklines" %></li>
+        <li><%= link_to "Twitter", "https://twitter.com/slacklines" %></li>
+        <li><%= link_to "YouTube", "http://www.youtube.com/AdrenalineSlackline" %></li>
+      </ul>
+
+      <ul>
+        <li><%= link_to "Athletes", athletes_path %></li>
+        <li><%= link_to "About the Sport", about_sport_path %></li>
+        <li><%= link_to "Support", "#" %></li>
+        <li><%= link_to "FAQ", "#" %></li>
+      </ul>
+    </div>
+
     <%= javascript_include_tag "application" %>
   </body>
 </html>
