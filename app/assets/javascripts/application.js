@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require_tree .
 
+// Load Foundation Framework
 $(document).foundation();
 
 
@@ -36,8 +37,14 @@ $(document).ready(function() {
 
   // Set the initial overlay
   overlay(".banner-img");
-  overlay(".news-img");
-  setNewsHeight(".news-img");
+
+  $(".news-img").load(function() {
+    overlay(".news-img");
+    setNewsHeight(".news-img");
+  }).each(function() {
+    if(this.complete) $(this).load();
+  });
+
 
   $(window).resize(function() {
     overlay(".banner-img");
