@@ -167,6 +167,12 @@ h1 {
   @include open-sans-light;
 }
 
+@media (screen) and (max-width: 768px) {
+  .item-details {
+    text-align: center;
+  }
+}
+
 /********************** NEWS *********************/
 /*-----------------------------------------------*/
 
