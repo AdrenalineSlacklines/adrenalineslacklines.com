@@ -100,6 +100,10 @@ h1 {
   margin-bottom: 3px;
 }
 
+.hero-row {
+  margin-left: 10% !important;
+}
+
 .hero-text {
   background: rgba(0,0,0, 0.4);
   width: 50%;
@@ -167,9 +171,12 @@ h1 {
   @include open-sans-light;
 }
 
-@media (screen) and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .item-details {
     text-align: center;
+  }
+  .product-image {
+    margin-left: 30%;
   }
 }
 
