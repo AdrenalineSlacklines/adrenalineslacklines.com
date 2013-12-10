@@ -118,6 +118,11 @@ h1 {
   }
 }
 
+@media only media and (max-width: 799px) {
+  .hero-text {
+    text-align: center;
+  }
+}
 /******************* CAROUSEL ********************/
 /*-----------------------------------------------*/
 .overlay {
