@@ -48,10 +48,13 @@
 @mixin button($radius, $bgcolor) {
   background: $bgcolor;
   color: $white;
-  font-size: 1.5em;
+  // font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
   padding: .5em 2em;
+  display: block;
+  margin-bottom: 1em;
+  max-width: 250px;
   @include borderRadius($radius);
   @include open-sans-light;
   &:hover {
@@ -93,6 +96,31 @@ h1 {
 
 /******************** HERO **********************/
 /*-----------------------------------------------*/
+@media screen and (max-width: 480px) {
+  .hero-text {
+    width: 90% !important;
+  }
+  .hero-button {
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 940px) {
+  .hero-text {
+    text-align: center;
+    width: 60%;
+    margin: 10% auto 0 auto;
+  }
+  .hero-row {
+    margin-left: 0;
+  }
+  .hero-button {
+    margin: auto;
+  }
+}
+
+
 .hero-container {
   background: url($cdn + "hero.large.jpg") no-repeat;
   background-position: center 0;
@@ -101,7 +129,7 @@ h1 {
 }
 
 .hero-row {
-  margin-left: 10% !important;
+  margin-left: 10%;
 }
 
 .hero-text {
@@ -118,11 +146,10 @@ h1 {
   }
 }
 
-@media only media and (max-width: 799px) {
-  .hero-text {
-    text-align: center;
-  }
+.hero-button {
+  font-size: 1.5em;
 }
+
 /******************* CAROUSEL ********************/
 /*-----------------------------------------------*/
 .overlay {
@@ -326,12 +353,28 @@ h1 {
 .red-button {
   @include button(0, $adrenaline-red);
 }
+.center-button {
+  margin: 1em auto;
+}
+
+/****************** SITE WIDE ********************/
+/*-----------------------------------------------*/
+.body-image {
+  border: 1px solid $text-gray;
+  padding: 5px;
+  margin: 1em auto;
+}
+
+.bottom-column {
+  margin-bottom: 2em;
+}
 
 
 /****************** UTIlITIES ********************/
 /*-----------------------------------------------*/
 .clear {
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 
