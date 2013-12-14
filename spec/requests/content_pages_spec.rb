@@ -35,5 +35,23 @@ describe "ContentPages" do
     it { should have_title("#{base_title} | Disclaimer")}
   end
 
+  describe "Faq page" do
+    before { visit faq_path }
+
+    it { should have_title("#{base_title} | FAQ's") }
+  end
+
+  describe "Contact page" do
+    before { visit contact_path }
+
+    it { should have_title("#{base_title} | Contact Us") }
+  end
+
+  describe "Support page" do
+    before { visit support_path }
+
+    it { should have_title("#{base_title} | Support") }
+  end
+
 
 end
