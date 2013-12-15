@@ -58,9 +58,9 @@ $(document).ready(function() {
      var answer = $(this).next();
 
      if (answer.css("display") === "none") {
-        answer.css("display", "block");
+        answer.slideDown(600);
      } else {
-        answer.css("display", "none");
+        answer.slideUp(600);
      }
 
   });
