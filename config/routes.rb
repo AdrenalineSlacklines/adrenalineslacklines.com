@@ -1,8 +1,4 @@
 AdrenalineslacklinesCom::Application.routes.draw do
-
-  # get "content_pages/contact"
-  # get "content_pages/faq"
-  # get "content_pages/support"
   root 'content_pages#home'
   match '/athletes', to: 'content_pages#athletes', via: 'get'
   match '/about', to: 'content_pages#about', via: 'get'
