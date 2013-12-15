@@ -53,8 +53,20 @@ $(document).ready(function() {
   });
 
 
-  //----------- Carousel Continuous Sliding --------//
-  // $(".carousel").animate({"left": "-=50px"}, "slow");
+  //----------- FAQ PAGE --------//
+  $(".question").click(function() {
+     var answer = $(this).next();
+
+     if (answer.css("display") === "none") {
+        answer.css("display", "block");
+     } else {
+        answer.css("display", "none");
+     }
+
+  });
+
+
+
 
 
 });
