@@ -1,4 +1,6 @@
 AdrenalineslacklinesCom::Application.routes.draw do
+
+  get "store/product"
   root 'content_pages#home'
   match '/athletes', to: 'content_pages#athletes', via: 'get'
   match '/about', to: 'content_pages#about', via: 'get'
@@ -7,6 +9,7 @@ AdrenalineslacklinesCom::Application.routes.draw do
   match '/contact', to: 'content_pages#contact', via: 'get'
   match '/faq', to: 'content_pages#faq', via: 'get'
   match '/support', to: 'content_pages#support', via: 'get'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
