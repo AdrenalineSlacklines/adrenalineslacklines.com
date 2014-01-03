@@ -1,2 +1,79 @@
-<h1>ContentPages#support</h1>
-<p>Find me in app/views/content_pages/support.html.erb</p>
+<% provide(:title, 'Support') %>
+
+
+<div class="row">
+  <div class="small-12 large-12 columns">
+    <h1>Support</h1>
+  </div>
+  <div class="small-12 large-8 columns">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, nemo, obcaecati officia repellat nostrum vel ratione blanditiis mollitia atque molestiae amet illum autem placeat quos incidunt nobis nam inventore deleniti.</p>
+
+    <table class="contact-table">
+      <tr>
+        <th>Department</th>
+        <th>Contact For</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>General Inquiries</td>
+        <td>For general information</td>
+        <td><a href="mailto:info@adrenalineslacklines.com">info@adrenalineslacklines.com</a></td>
+      </tr>
+      <tr>
+        <td>Sales</td>
+        <td>For questions regarding sales</td>
+        <td><a href="mailto:sales@adrenalineslacklines.com">sales@adrenalineslacklines.com</a></td>
+      </tr>
+      <tr>
+        <td>Advertising</td>
+        <td>For questions regarding advertisement</td>
+        <td><a href="mailto:advertising@adrenalineslacklines.com">advertising@adrenalineslacklines.com</a></td>
+      </tr>
+      <tr>
+        <td>Returns</td>
+        <td>For questions regarding returns</td>
+        <td><a href="mailto:returns@adrenalineslacklines.com">returns@adrenalineslacklines.com</a></td>
+      </tr>
+      <tr>
+        <td>Sponsorship</td>
+        <td>For questions regarding sponsorships</td>
+        <td><a href="mailto:sponsorship@adrenalineslacklines.com">sponsorship@adrenalineslacklines.com</a></td>
+      </tr>
+      <tr>
+        <td>Service & Support</td>
+        <td>For questions regarding service & support</td>
+        <td><a href="mailto:service@adrenalineslacklines.com">service@adrenalineslacklines.com</a></td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="small-12 large-4 columns">
+    <h4>Get Started</h4>
+
+    <div class="small-12 columns product-image">
+      <img src="http://d1bjc4ympi20vo.cloudfront.net/beginner-kit-clear.jpg" alt="Adrenaline Begginner Kit">
+    </div>
+
+    <div class="small-12 columns item-details">
+      <%= link_to "Beginner Slacklining Kit", "#", class: "store-link" %>
+      <h4 class="product-description"> Line, Anchors, Carabiners, & Bag</h4>
+      <h3 class="price">$77.50</h3>
+      <%= link_to "Buy Now", "#", class: "buy-now" %>
+    </div>
+
+    <div class="small-12 columns product-image">
+      <img src="http://d1bjc4ympi20vo.cloudfront.net/as-carabiner-clear.jpg" alt="Adrenaline Begginner Kit">
+    </div>
+    <div class="small-12 columns item-details bottom-column">
+      <%= link_to "Black Aluminum Carabiner", "#", class: "store-link" %>
+      <h4 class="product-description">Cold forged & economically priced</h4>
+      <h3 class="price">$10.00</h3>
+      <%= link_to "Buy Now", "#", class: "buy-now" %>
+    </div>
+
+  </div>
+</div>
+
+
+
